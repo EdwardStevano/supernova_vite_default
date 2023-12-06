@@ -1,21 +1,21 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import React, { Suspense } from 'react'
 
-// pages importation
-import __MainPage from '@pages/main/main'
-import __AuthPage from '@pages/auth/auth'
-import __NotFoundPage from '@pages/notFound/notFound'
+// Principal route imporatation
+import __MAIN__ from '@config/routes/main'
+import __DASHBOARD__ from '@config/routes/dashboard'
 
+// Redirect route importation
+import __LOADER__ from '@pages/loader/loader'
+import __NOTFOUND__ from '@config/routes/notFound'
 
 function RouteConfig() {
   return (
-    <Routes>
-        <Route path="/" element={<__MainPage />}>
-            <Route index element={<__AuthPage />} />
-            <Route path="/home" element={<__AuthPage />} />
-            <Route path="/test" element={<__NotFoundPage />} />
-        </Route>
-    </Routes>
+    <Suspense fallback={<__LOADER__ />}>
+        <__MAIN__ />
+        {/* <__DASHBOARD__ /> */}
+        <__NOTFOUND__ />
+
+    </Suspense>
   )
 }
 

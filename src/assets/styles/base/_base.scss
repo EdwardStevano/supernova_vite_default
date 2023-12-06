@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	scroll-timeline: 8s;
-	font-family: var(--defaultfont);
+	font-family: var(--DefaultFont);
 	transition: .1s ease-in-out;
 	outline: var(--primaryColor);;
 	&::after {
@@ -16,7 +16,7 @@
 		box-sizing: border-box;
 		scroll-behavior: smooth;
 		scroll-timeline: 8s;
-		font-family: var(--defaultfont);
+		font-family: var(--DefaultFont);
 		transition: .1s ease-in-out;
 		outline: var(--primaryColor);;
 	}
@@ -26,7 +26,7 @@
 		box-sizing: border-box;
 		scroll-behavior: smooth;
 		scroll-timeline: 8s;
-		font-family: var(--defaultfont);
+		font-family: var(--DefaultFont);
 		transition: .1s ease-in-out;
 		outline: var(--primaryColor);
 	}
