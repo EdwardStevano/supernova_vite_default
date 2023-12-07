@@ -1,6 +1,8 @@
 /* Eds Normalize */
 @use '../abstracts/variables' as *;
 @use '../parameters/_mixins' as *;
+@use '../parameters/_function' as *;
+
 
 * {
 	@include default_normalize;

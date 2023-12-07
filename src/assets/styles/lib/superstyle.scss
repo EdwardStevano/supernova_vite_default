@@ -21,7 +21,7 @@ p{
 
 // ---------------- GLOBAL ----------------
 .super-container-global{
-    width: 100vh;
+    width: 100vw;
     @include flex;
 }
 
@@ -69,11 +69,15 @@ p{
 }
 
 .side-70{
-    width: 57%;
+    width: 70%;
 }
 
 .side-30{
-    width: 70%;
+    width: 30%;
+}
+
+.side-20{
+    width: 20%;
 }
 
 .box-shadow1{
@@ -178,12 +182,141 @@ p{
 
 // Border radius pourcentage size
 @for $radius from 1 through 150{
-    @if $radius > 10{
-        @warn 'Limite de taille de borde radius'
+
+    .border-radius-px#{$radius}{
+        border-radius: $radius + px;
     }
-    .border-radius-#{$radius}{
+};
+
+@for $radius from 1 through 150{
+
+    .border-radius-p#{$radius}{
         border-radius: $radius + "%";
     }
 };
 
-// ---------------- EXTENDS ----------------
+// MARGIN
+@for $margin from 1 through 1000{
+    .marge-px#{$margin}{
+        margin: $margin + px;
+    }
+};
+
+@for $margin from 1 through 100{
+    .marge-p#{$margin}{
+        margin: $margin + "%";
+    }
+};
+
+// MARGIN PIXELS
+@for $margin from 1 through 1000{
+    .marge-top-px#{$margin}{
+        margin-top: $margin + px;
+    }
+};
+
+@for $margin from 1 through 1000{
+    .marge-bottom-px#{$margin}{
+        margin-bottom: $margin + px;
+    }
+};
+
+@for $margin from 1 through 1000{
+    .marge-right-px#{$margin}{
+        margin-right: $margin + px;
+    }
+};
+
+@for $margin from 1 through 1000{
+    .marge-left-px#{$margin}{
+        margin-bottom: $margin + px;
+    }
+};
+
+// MARGIN POURCENTAGE
+@for $margin from 1 through 100{
+    .marge-top-p#{$margin}{
+        margin-top: $margin + "%";
+    }
+};
+
+@for $margin from 1 through 100{
+    .marge-bottom-p#{$margin}{
+        margin-bottom: $margin + "%";
+    }
+};
+
+@for $margin from 1 through 100{
+    .marge-right-p#{$margin}{
+        margin-right: $margin + "%";
+    }
+};
+
+@for $margin from 1 through 100{
+    .marge-left-p#{$margin}{
+        margin-bottom: $margin + "%";
+    }
+};
+
+// PADDING
+@for $padding from 1 through 1000{
+    .pad-px#{$padding}{
+        padding: $padding + px;
+    }
+};
+
+@for $padding from 1 through 100{
+    .pade-p#{$padding}{
+        padding: $padding + "%";
+    }
+};
+
+// PADDING PIXELS
+@for $padding from 1 through 1000{
+    .pad-top-px#{$padding}{
+        padding-top: $padding + px;
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-bottom-px#{$padding}{
+        padding-bottom: $padding + px;
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-right-px#{$padding}{
+        padding-right: $padding + px;
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-left-px#{$padding}{
+        padding-bottom: $padding + px;
+    }
+};
+
+// PADDING POURCENTAGE
+@for $padding from 1 through 1000{
+    .pad-top-p#{$padding}{
+        padding-top: $padding + "%";
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-bottom-p#{$padding}{
+        padding-bottom: $padding + "%";
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-right-p#{$padding}{
+        padding-right: $padding + "%";
+    }
+};
+
+@for $padding from 1 through 1000{
+    .pad-left-p#{$padding}{
+        padding-bottom: $padding + "%";
+    }
+};

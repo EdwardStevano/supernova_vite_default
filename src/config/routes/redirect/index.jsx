@@ -8,8 +8,8 @@ import __Unauthorized from '@pages/redirect/unauthorized'
 function NotFoundRoutes() {
   return (
       <Routes>
-        <Route path="/*" element={<__NotFound />} />
         <Route path="/unauthorized" element={<__NotFound />} />
+        <Route component={<__NotFound />} />
       </Routes>
   );
 }
