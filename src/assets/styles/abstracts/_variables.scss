@@ -59,7 +59,7 @@
 }
 
 
-.darkTheme {
+.dark {
     /* principal color */
     --primaryColor: #0076de;
     --secondaryColor: #101621;
@@ -115,5 +115,6 @@
     --logoMinimizeIcon: url('../../image/logo/EMIT_Logo_inlight.png');
 
     /* Font family */
+    --DefaultFont: Poppins;
     --TitleFont: Poppins;
 }

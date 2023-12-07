@@ -11,7 +11,7 @@ function DashboardRoutes() {
       <Routes>
         <Route path="dashboard" element={<__dashboard />}>
             <Route index element={<__dashboard__Section />} />
-            <Route path="/main" element={<__dashboard__Section />} />
+            <Route path="main" element={<__dashboard__Section />} />
         </Route>
       </Routes>
   );

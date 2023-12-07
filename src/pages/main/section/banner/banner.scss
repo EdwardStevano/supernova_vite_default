@@ -13,6 +13,10 @@
         font-family: var(--defaultfont);
         font-size: 70px;
         font-weight: 800;
+        color: var(--darkFontColor);
         opacity: 0.8;
+    }
+    small{
+        color: var(--darkFontColor);
     }
 }
