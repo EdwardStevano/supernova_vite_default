@@ -1,34 +1,16 @@
 /* Eds Normalize */
 @use '../abstracts/variables' as *;
+@use '../parameters/_mixins' as *;
+@use '../parameters/_function' as *;
+
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	scroll-timeline: 8s;
-	font-family: var(--defaultfont);
-	transition: .1s ease-in-out;
-	outline: var(--primaryColor);;
+	@include default_normalize;
 	&::after {
-		margin: 0px;
-		padding: 0px;
-		box-sizing: border-box;
-		scroll-behavior: smooth;
-		scroll-timeline: 8s;
-		font-family: var(--defaultfont);
-		transition: .1s ease-in-out;
-		outline: var(--primaryColor);;
+		@include default_normalize;
 	}
 	&::before {
-		margin: 0px;
-		padding: 0px;
-		box-sizing: border-box;
-		scroll-behavior: smooth;
-		scroll-timeline: 8s;
-		font-family: var(--defaultfont);
-		transition: .1s ease-in-out;
-		outline: var(--primaryColor);
+		@include default_normalize;
 	}
 	&::selection {
 		background-color: var(--primaryColor);
@@ -56,6 +38,7 @@
 .section-container {
 	margin-top: 100px;
 }
+
 body {
 	background-color: var(--backgroundColor);
 	// background-image: var(--styleBackground);

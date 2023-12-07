@@ -5,3 +5,10 @@
 // Asbtract style import
 @import 'abstracts/_variables.scss';
 @import 'abstracts/_fonts.scss';
+
+// Parameters
+@import 'parameters/_mixins.scss';
+@import 'parameters/_function.scss';
+
+// supernova librairies
+@import 'lib/superstyle.scss';
